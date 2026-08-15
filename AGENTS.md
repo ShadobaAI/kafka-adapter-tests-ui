@@ -1,19 +1,10 @@
 # Repository Agent Instructions
 
-## Workspace Instructions
+Apply the required [workspace instructions](../../AGENTS.md). The rules below are this repository's delta and override shared rules on conflict.
 
-Read the required [workspace instructions](../../AGENTS.md) before working in this repository. The fixed `KAFKA_PROJECTS_ROOT` layout is required. If the shared file is missing, report a workspace-layout error and stop. The repository-specific rules below supplement and override the shared rules when they conflict.
+This repository contains Vanessa Automation UI scenarios for Kafka Adapter. Current scenarios and test results are primary evidence of test behavior.
 
-## Repository Scope
-
-This repository contains Vanessa Automation UI scenarios for Kafka Adapter. Start with [README.md](README.md). Current scenarios and test results are primary evidence of test behavior.
-
-## Repository-Specific Rules
-
-- Edit Vanessa feature files and other non-1C test configuration directly in UTF-8.
+- Edit Vanessa feature files and other non-1C test configuration directly in UTF-8; do not use EDT for them.
 - Preserve existing Gherkin language, naming, indentation, fixtures, and scenario style.
-- Do not use EDT to edit Vanessa feature files.
-- Run only affected features or scenarios through the existing project workflow when the environment is available.
-- Do not invent a runner command that is absent from README, CI, or existing scripts.
-- Do not change product source from a test task without explicit multi-repository scope.
-
+- Run only affected features or scenarios through a command documented by this repository when the environment is available.
+- Do not change product source without explicit multi-repository scope.
