@@ -1,2 +1,4 @@
-.vanessa/
+/.vanessa/*
+!/.vanessa/profile.json
+!/.vanessa/interactive.local.json
 /.gitkeep
